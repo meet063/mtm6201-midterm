@@ -1,5 +1,5 @@
 /* =========================
-   RESET (meyerweb)
+   RESET CSS (meyerweb)
    ========================= */
 
 html,
@@ -132,17 +132,19 @@ table {
   border-spacing: 0;
 }
 
-/* Mobile defualt css  */
+/* Mobile-first base styles applied before tablet and desktop breakpoints  */
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box;     /* Universal box sizing */
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;    /* Enables smooth scrolling when users click internal page links */
 }
+
+/* Base typography, colors, and background styling for the website */
 
 body {
   margin: 0;
@@ -153,21 +155,26 @@ body {
   background-color: #f3f0e9;
 }
 
+/* Makes images responsive so they scale within their container */
 img {
   display: block;
   width: 100%;
   height: auto;
 }
-
+ 
+/* Removes default underline styling from links */
 a {
   text-decoration: none;
 }
 
+
+/* Centers content and limits maximum page width */
 .wrapper {
   width: min(100% - 1rem, 1200px);
   margin-inline: auto;
 }
 
+/* Smaller container used for sections with shorter text width */
 .narrow {
   max-width: 900px;
 }
@@ -201,6 +208,8 @@ p {
   margin-bottom: 1rem;
 }
 
+
+/* Accessibility feature allowing keyboard users to skip navigation */
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -252,6 +261,8 @@ p {
   color: #d69e3d;
 }
 
+
+/* Hero uses a background image to create the main visual area */
 .hero {
   background-image: url("../images/hero-background.jpg");
   background-size: cover;
@@ -259,6 +270,8 @@ p {
   background-repeat: no-repeat;
 }
 
+
+/* Dark overlay improves readability of hero text */
 .hero-overlay {
   background: rgba(0, 0, 0, 0.48);
   min-height: 285px;
@@ -363,6 +376,7 @@ p {
   max-width: 12ch;
 }
 
+/*  adding some sort of gap and marging for grid  */
 .gallery-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -409,7 +423,7 @@ p {
   font-size: 0.78rem;
   line-height: 1.45;
 }
-
+/* Background image section promoting menu and locations */
 .promo-section {
   background-image: url("../images/coffee-shop.jpeg");
   background-size: cover;
@@ -455,6 +469,7 @@ p {
   line-height: 1.5;
 }
 
+/* Grid layout used to display customer testimonial cards */
 .testimonial-grid {
   display: grid;
   gap: 0.8rem;
@@ -490,6 +505,7 @@ p {
   text-transform: uppercase;
 }
 
+/* Simple footer styling with centered copyright text */
 .site-footer {
   background-color: #000000;
   color: #ffffff;
@@ -502,6 +518,8 @@ p {
   font-size: 0.7rem;
 }
 
+
+/* Keyframe animation creates smooth fade-up entrance effect */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -513,7 +531,7 @@ p {
   }
 }
 
-/* Tablet */
+/* Tablet media query adjusts layout and typography for medium screens */ 
 @media (min-width: 768px) {
   .wrapper {
     width: min(100% - 2rem, 1200px);
@@ -535,7 +553,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
   }
-
+    /* Adjust logo sizing  */
   .logo {
     width: 150px;
   }
@@ -573,7 +591,7 @@ p {
   .about-content {
     max-width: 480px;
   }
-
+    /* As per layout change while using on tablet  */
    .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -589,7 +607,7 @@ p {
   .testimonials h2 {
     max-width: none;
   }
-
+  /* grid adjustment for tablet size  */
   .gallery-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -624,7 +642,7 @@ p {
   }
 }
 
-/* Desktop */
+/* Desktop media query increases spacing and layout complexity */ 
 @media (min-width: 1100px) {
   h1 {
     font-size: 3.815rem;
@@ -641,7 +659,7 @@ p {
   .hero-overlay {
     min-height: 720px;
   }
-
+    /* Adjust hero content for desktop  */
   .hero-content {
     max-width: 700px;
   }
@@ -684,7 +702,7 @@ p {
     width: 100%;
     object-fit: cover;
   }
-
+  /* adjust grid layout as per desktop mock up */
   .testimonial-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Coffee House</title>
+    <title>Midterm Project</title>
     <meta
       name="description"
       content="My Coffee House landing page featuring premium coffee, fair trade beans, and local baked goods."
     />
-
+    <!-- fonts from google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,10 +19,14 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- Skip link added for accessibility. -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
+    <!-- Header section contains the logo and main navigation. -->
     <header class="site-header">
       <div class="wrapper header-inner">
+
+        <!--  Logo image links back to the homepage. -->
         <a href="#" class="logo-link" aria-label="My Coffee House home">
           <img
             src="./images/my-coffee-shop-logo.svg"
@@ -30,7 +34,7 @@
             class="logo"
           />
         </a>
-
+        <!--  Main navigation for the site. -->
         <nav aria-label="Primary navigation" class="main-nav">
           <ul class="nav-list">
             <li><a href="#about">About Us</a></li>
@@ -40,6 +44,10 @@
         </nav>
       </div>
     </header>
+     
+         <!-- Hero section is the first visual area visitors see.
+          It includes a headline, short description, and a call-to-action button.
+          The overlay will help improve text readability over the background image.--> 
 
     <main id="main-content">
       <section class="hero">
@@ -55,7 +63,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Welcome section introduces the cafe and shows a small image gallery of the coffee experience. -->
       <section class="welcome section-light">
         <div class="wrapper">
           <p class="eyebrow">Welcome to My Coffee House</p>
@@ -86,7 +94,7 @@
           </div>
         </div>
       </section>
-
+      <!-- This section highlights the main features of the coffee shop like fair trade coffee and baked goods. -->
       <section class="offer section-light" aria-labelledby="offer-heading">
         <div class="wrapper narrow">
           <p class="eyebrow">What We Offer</p>
@@ -106,7 +114,7 @@
                 ethically in the development of delicious, sustainable coffee.
               </p>
             </article>
-
+            <!-- Added image for tie up business feedback from customer  -->
             <article class="offer-card">
               <img
                 src="./images/local-baked-goods.svg"
@@ -120,7 +128,7 @@
                 goods to complement every beverage.
               </p>
             </article>
-
+            <!-- give them value on website why they should come to visit us  -->
             <article class="offer-card">
               <img
                 src="./images/made-with-love.svg"
@@ -137,7 +145,7 @@
           </div>
         </div>
       </section>
-
+       <!-- Promotional blocks guide users to important pages like the menu and store locations. -->
       <section class="promo-section">
         <div id="menu" class="promo-block">
           <div class="promo-overlay">
@@ -148,7 +156,7 @@
             </div>
           </div>
         </div>
-
+        <!-- location section for find store  -->
         <div id="locations" class="promo-block">
           <div class="promo-overlay">
             <div class="wrapper promo-content">
@@ -159,7 +167,7 @@
           </div>
         </div>
       </section>
-
+       <!-- Add image for about us  -->
       <section id="about" class="about section-light">
         <div class="wrapper about-grid">
           <div class="about-image">
@@ -168,7 +176,7 @@
               alt="Baristas working behind the counter preparing coffee"
             />
           </div>
-
+          <!-- About section tells the story of the coffee house and explains the brand’s values. -->
           <div class="about-content">
             <p class="eyebrow">About Us</p>
             <h2>Read Our Story</h2>
@@ -188,7 +196,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Testimonials display customer feedback to build trust and credibility. -->
       <section
         class="testimonials section-dark"
         aria-labelledby="testimonials-heading"
@@ -196,7 +204,7 @@
         <div class="wrapper">
           <p class="eyebrow">Testimonials</p>
           <h2 id="testimonials-heading">What Our Customers Say About Us</h2>
-
+            <!-- customer feedback 1 with image  -->
           <div class="testimonial-grid">
             <article class="testimonial-card">
               <img
@@ -211,7 +219,7 @@
                 <span>Jane D, Toronto</span>
               </div>
             </article>
-
+            <!-- customer feedback 2 with image  -->
             <article class="testimonial-card">
               <img
                 src="images/testimonial-2.jpeg"
@@ -225,7 +233,7 @@
                 <span>Scott W, Ottawa</span>
               </div>
             </article>
-
+            <!-- customer feedback 3 with image  -->
             <article class="testimonial-card">
               <img
                 src="images/testimonial-3.jpeg"
@@ -243,7 +251,7 @@
         </div>
       </section>
     </main>
-
+    <!-- Footer contains basic site information and copyright details. -->
     <footer class="site-footer">
       <div class="wrapper">
         <p>&copy; My Coffee Company 2024</p>
